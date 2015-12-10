@@ -16,7 +16,7 @@ namespace CsvConversion
             {
                 var line = rawData[index];
                 var processedLine = processLine(line);
-                sb.Append(line);
+                sb.Append(processedLine);
             }
 
             var inputDirectory = Path.GetDirectoryName(inputPath);
