@@ -61,7 +61,7 @@ namespace CsvConversion
             else
                 z = (z - 16 / 116) / 7.787;
 
-            // Multiply by reference values for Observer= 2°, Illuminant= D65
+            // Normalize: by reference values for Observer= 2°, Illuminant= D65
             x *= 95.047;
             y *= 100.000;
             z *= 108.883;
@@ -91,7 +91,7 @@ namespace CsvConversion
             else
                 b = 12.92 * b;
 
-
+            // Normalize
             r *= 255;
             g *= 255;
             b *= 255;
